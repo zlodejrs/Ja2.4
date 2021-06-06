@@ -21,19 +21,20 @@ public class StatisticsService {
     }
 
     public long findAverage(long[] purchases) {
+
         return calculateSum(purchases) / purchases.length;
-        }
+    }
 
 
-        public long findMaxIndex(long[] purchases) {
+    public long findMaxIndex(long[] purchases) {
         int maxIndex = 0;
         for (int i = 0; i < purchases.length; i++) {
-            if (purchases [i] >= purchases[maxIndex]) {
+            if (purchases[i] >= purchases[maxIndex]) {
                 maxIndex = i;
             }
         }
-            return maxIndex + 1;
-        }
+        return maxIndex + 1;
+    }
 
     public long findMinIndex(long[] purchases) {
         int minIndex = 0;
@@ -54,6 +55,7 @@ public class StatisticsService {
         }
         return index;
     }
+
     public long aboveAverage(long[] purchases) {
         int index = 0;
         long average = calculateSum(purchases) / purchases.length;
