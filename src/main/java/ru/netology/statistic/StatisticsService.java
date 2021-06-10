@@ -21,8 +21,11 @@ public class StatisticsService {
     }
 
     public long findAverage(long[] purchases) {
-
-        return calculateSum(purchases) / purchases.length;
+        long average = 0;
+        for (long purchase : purchases) {
+            average = purchase;
+        }
+        return average;
     }
 
 
